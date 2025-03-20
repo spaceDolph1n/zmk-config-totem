@@ -151,7 +151,7 @@ label= "SYM"                               ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET   &kp AMPS    &kp STAR    &kp LPAR    &kp RPAR       
-      &mt LCTRL KP_N1   &mt LALT KP_N2   &mt LGUI KP_N3   &mt LSHIFT KP_N4   &kp KP_N5       &mt RSHIFT MINUS   &mt RGUI EQUAL   &mt RALT APOS    &mt RCTRL LBKT    &kp RBKT 
+      &mt LCTRL KP_N1   &mt LALT KP_N2   &mt LGUI KP_N3   &mt LSHIFT KP_N4   &kp KP_N5       &kp MINUS   &mt RSHIFT EQUAL   &mt RGUI APOS    &mt RALT LBKT    &mt RCTRL RBKT 
     &none       &kp KP_N6   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_N0       &kp RA(N5)  &kp BSLH    &kp GRAVE   &kp LBRC    &kp RBRC    &none         
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
