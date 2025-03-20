@@ -38,17 +38,6 @@
     };
 
     macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp N2>
-                , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp G &kp I &kp F>
-                ;
-        };
         snip: snip {
             compatible = "zmk,behavior-macro";
             label = "SNIPPET_TOOL";
@@ -135,7 +124,7 @@ label= "NAVI"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp F1      &bt F2      &kp F3      &kp F4      &kp F5          &kp F6      &kp F7      &kp F8      &kp F9      &kp F10
+                &kp F1      &kp F2      &kp F3      &kp F4      &kp F5          &kp F6      &kp F7      &kp F8      &kp F9      &kp F10
               &kp C_PREV   &kp C_NEXT  &kp C_VOL_DN &kp C_VOL_UP &kp C_PP       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none
     &none       &snip       &lock       &none       &none       &none           &clog       &none       &none       &none       &none       &none      
                                         &trans      &trans      &trans          &trans      &trans      &trans      
