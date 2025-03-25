@@ -58,11 +58,13 @@
         };
         euro: euro {
             compatible = "zmk,behavior-macro";
-            label = "EURO_SYMBOL";
             #binding-cells = <0>;
-            bindings = <
-                &send_string "€"
-            >;
+            bindings
+                = <&macro_press &kp LC(LG)>
+                , <&macro_tap &kp SPACE>
+                , <&macro_release &kp LC(LG)>
+                , <&macro_tap &kp E &kp U>
+                , <&macro_tap &kp ENTER>;
         };
     };
 
@@ -105,7 +107,7 @@ label= "NAVI"                              ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃   PREV    ┃   NEXT    ┃ VOL DOWN  ┃  VOL UP   ┃PLAY/PAUSE ┃   ┃    LEFT   ┃    DOWN   ┃     UP    ┃   RIGHT   ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃   SNIP    ┃   LOCK    ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+// ┃           ┃   SNIP    ┃   LOCK    ┃           ┃           ┃           ┃   ┃           ┃           ┃  BT PREV  ┃  BT NEXT  ┃  BT CLEAR ┃BT CLEARALL┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃   TRANS   ┃   TRANS   ┃   TRANS   ┃   ┃   TRANS   ┃   TRANS   ┃   TRANS   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -114,7 +116,7 @@ label= "NAVI"                              ;
 
                 &kp F1      &kp F2      &kp F3      &kp F4      &kp F5          &kp F6      &kp F7      &kp F8      &kp F9      &kp F10
               &kp C_PREV   &kp C_NEXT  &kp C_VOL_DN &kp C_VOL_UP &kp C_PP       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none
-    &none       &snip       &lock       &none       &none       &none           &none       &none       &none       &none       &none       &none      
+    &none       &snip       &lock       &none       &none       &none           &none       &none       &bt BT_PRV  &bt BT_NXT  &bt BT_CLR  &bt BT_CLR_ALL
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
                 };
