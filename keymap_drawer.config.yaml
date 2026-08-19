@@ -7,5 +7,5 @@ parse_config:
     '&snip': Snip
     '&lock': Lock
     '&euro': '€'
-    '&kp LC(LS(LA(LG(F))))': Homerow
+    '&kp LS(LA(LG(LCTRL)))': Homerow
     '&kp LS(LG(J))': Scroll
