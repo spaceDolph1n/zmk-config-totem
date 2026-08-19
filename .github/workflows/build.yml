@@ -1,4 +1,13 @@
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    # None of these can change the firmware, and the keymap drawing is committed
+    # by a bot on every keymap change -- which would otherwise trigger a build.
+    paths-ignore:
+      - 'keymap-drawer/**'
+      - 'docs/**'
+      - 'readme.md'
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   build:
