@@ -39,6 +39,10 @@
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
+
+        /* Required for CONFIG_ZMK_SLEEP: without it the matrix cannot wake
+         * the keyboard out of deep sleep. */
+        wakeup-source;
         
         diode-direction = "col2row"; 
         row-gpios
