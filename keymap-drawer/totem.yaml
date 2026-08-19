@@ -21,7 +21,7 @@ layers:
   - {t: K, h: RGUI}
   - {t: L, h: RALT}
   - {t: ;, h: RCTRL}
-  - Hyper+F
+  - Homerow
   - Z
   - X
   - C
@@ -32,7 +32,7 @@ layers:
   - ','
   - .
   - /
-  - Sft+Gui+J
+  - Scroll
   - DEL
   - {t: TAB, h: SYM}
   - RET
@@ -60,9 +60,9 @@ layers:
   - UP
   - RIGHT
   - ''
-  - '&studio_unlock'
-  - '&snip'
-  - '&lock'
+  - Studio
+  - Snip
+  - Lock
   - ''
   - ''
   - ''
@@ -105,7 +105,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '&euro'
+  - €
   - \
   - '`'
   - '{'

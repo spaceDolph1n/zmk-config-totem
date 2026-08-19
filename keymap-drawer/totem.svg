@@ -217,7 +217,7 @@ path.combo {
 </g>
 <g transform="translate(34, 209) rotate(-10.0)" class="key keypos-20">
 <rect rx="6" ry="6" x="-27" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">Hyper+F</text>
+<text x="0" y="0" class="key tap">Homerow</text>
 </g>
 <g transform="translate(97, 223) rotate(-10.0)" class="key keypos-21">
 <rect rx="6" ry="6" x="-27" y="-26" width="55" height="52" class="key"/>
@@ -261,9 +261,7 @@ path.combo {
 </g>
 <g transform="translate(816, 209) rotate(10.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-27" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">Sft+Gui</tspan><tspan x="0" dy="1.2em">+J</tspan>
-</text>
+<text x="0" y="0" class="key tap">Scroll</text>
 </g>
 <g transform="translate(254, 236)" class="key keypos-32">
 <rect rx="6" ry="6" x="-27" y="-26" width="55" height="52" class="key"/>
@@ -387,15 +385,15 @@ path.combo {
 </g>
 <g transform="translate(34, 209) rotate(-10.0)" class="key keypos-20">
 <rect rx="6" ry="6" x="-27" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;studio_un…</tspan></text>
+<text x="0" y="0" class="key tap">Studio</text>
 </g>
 <g transform="translate(97, 223) rotate(-10.0)" class="key keypos-21">
 <rect rx="6" ry="6" x="-27" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;snip</text>
+<text x="0" y="0" class="key tap">Snip</text>
 </g>
 <g transform="translate(151, 174) rotate(-4.0)" class="key keypos-22">
 <rect rx="6" ry="6" x="-27" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;lock</text>
+<text x="0" y="0" class="key tap">Lock</text>
 </g>
 <g transform="translate(211, 140)" class="key keypos-23">
 <rect rx="6" ry="6" x="-27" y="-26" width="55" height="52" class="key"/>
@@ -586,7 +584,7 @@ path.combo {
 </g>
 <g transform="translate(520, 177)" class="key keypos-26">
 <rect rx="6" ry="6" x="-27" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;euro</text>
+<text x="0" y="0" class="key tap">€</text>
 </g>
 <g transform="translate(579, 167)" class="key keypos-27">
 <rect rx="6" ry="6" x="-27" y="-26" width="55" height="52" class="key"/>
