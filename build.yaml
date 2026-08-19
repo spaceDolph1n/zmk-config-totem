@@ -1,6 +1,10 @@
 include:
+  # Central/left side carries ZMK Studio: the snippet adds the USB CDC-ACM
+  # endpoint Studio talks over, the cmake arg turns Studio itself on.
   - board: seeeduino_xiao_ble
     shield: totem_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: seeeduino_xiao_ble
     shield: totem_right
   - board: seeeduino_xiao_ble
