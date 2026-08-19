@@ -1,0 +1,28 @@
+# Renders config/totem.keymap into keymap-drawer/totem.svg and commits it, so the
+# reference is generated from the file that builds the firmware and cannot drift.
+# The physical layout is picked up automatically from
+# config/boards/shields/totem/totem-layouts.dtsi, so the drawing has the real
+# TOTEM shape, stagger and rotation.
+name: Draw keymap
+
+on:
+  push:
+    paths:
+      - 'config/*.keymap'
+      - 'config/boards/shields/totem/totem-layouts.dtsi'
+      - 'keymap_drawer.config.yaml'
+      - '.github/workflows/draw-keymap.yml'
+  workflow_dispatch:
+
+jobs:
+  draw:
+    permissions:
+      contents: write
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@v0.23.0
+    with:
+      keymap_patterns: config/totem.keymap
+      # No external modules in west.yml, so skip fetching them entirely.
+      west_config_path: ''
+      # A silently stale drawing is the exact failure this replaces.
+      fail_on_error: true
+      commit_message: 'Redraw keymap'
