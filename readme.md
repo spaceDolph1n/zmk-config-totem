@@ -30,5 +30,9 @@ TOTEM is a 38 key column-staggered split keyboard running [ZMK](https://zmk.dev/
 - scroll down and unzip the `firmware.zip` archive that contains the latest firmware
 - connect the left half of the TOTEM to your PC, press reset twice
 - the keyboard should now appear as a mass storage device
-- drag'n'drop the `totem_left-seeeduino_xiao_ble-zmk.uf2` file from the archive onto the storage device
-- repeat this process with the right half and the `totem_right-seeeduino_xiao_ble-zmk.uf2` file.
+- drag'n'drop the `totem_left-xiao_ble__zmk-zmk.uf2` file from the archive onto the storage device
+- repeat this process with the right half and the `totem_right-xiao_ble__zmk-zmk.uf2` file.
+
+Which halves need flashing: a change under `config/boards/shields/` (the shield's
+`.dtsi`, `.overlay` or `.conf`) means **both**. A change to `config/totem.keymap` means the
+**left** only — the right half just reports key positions, the left resolves every binding.
