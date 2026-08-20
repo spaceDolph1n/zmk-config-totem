@@ -8,4 +8,5 @@ parse_config:
     '&lock': Lock
     '&euro': '€'
     '&kp LS(LA(LG(LCTRL)))': Homerow
+    '&kp LC(A)': tmux
     '&kp LS(LG(J))': Scroll

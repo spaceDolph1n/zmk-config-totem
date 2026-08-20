@@ -170,7 +170,7 @@ display-name = "NAVI"                      ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃   PREV    ┃   NEXT    ┃ VOL DOWN  ┃  VOL UP   ┃PLAY/PAUSE ┃   ┃    LEFT   ┃    DOWN   ┃     UP    ┃   RIGHT   ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃  STUDIO   ┃   SNIP    ┃   LOCK    ┃           ┃           ┃           ┃   ┃           ┃           ┃  BT PREV  ┃  BT NEXT  ┃  OUT TOG  ┃           ┃
+// ┃  STUDIO   ┃   SNIP    ┃   LOCK    ┃   TMUX    ┃           ┃           ┃   ┃           ┃           ┃  BT PREV  ┃  BT NEXT  ┃  OUT TOG  ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃   TRANS   ┃   TRANS   ┃   TRANS   ┃   ┃   TRANS   ┃   TRANS   ┃   TRANS   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -179,7 +179,7 @@ display-name = "NAVI"                      ;
 
                 &kp F1      &kp F2      &kp F3      &kp F4      &kp F5          &kp F6      &kp F7      &kp F8      &kp F9      &kp F10
               &kp C_PREV   &kp C_NEXT  &kp C_VOL_DN &kp C_VOL_UP &kp C_PP       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &none
- &studio_unlock &snip       &lock       &none       &none       &none           &none       &none       &bt BT_PRV  &bt BT_NXT  &out OUT_TOG &none
+ &studio_unlock &snip       &lock       &kp LC(A)   &none       &none           &none       &none       &bt BT_PRV  &bt BT_NXT  &out OUT_TOG &none
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
                 };
